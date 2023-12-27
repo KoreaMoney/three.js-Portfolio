@@ -7,7 +7,7 @@ const Contact = () => {
     const [isLoading, setIsLoading] = useState(false);
 
     const handleChangeName = (e) => {
-        setFormValue({ ...form, [e.target.name]: e.target.value });
+        setFormValue({ ...formValue, [e.target.name]: e.target.value });
     };
     const handleFocus = () => {};
     const handleBlur = () => {};
@@ -16,9 +16,9 @@ const Contact = () => {
         setIsLoading(true);
 
         emailjs
-            .sendForm(
+            .send(
                 import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-                import.meta.env.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+                import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
                 {
                     from_name: formValue.name,
                     to_name: 'DowonKim',
@@ -30,16 +30,14 @@ const Contact = () => {
             )
             .then(() => {
                 setIsLoading(false);
-                //
+
+                setFormValue({ name: '', email: '', message: '' });
             })
             .catch((err) => {
                 setIsLoading(false);
                 console.error(err);
             });
     };
-
-    console.log('formValue', formValue);
-    console.log('formRef', formRef.current);
 
     return (
         <section className="relative flex lg:flex-row flex-col max-container">
