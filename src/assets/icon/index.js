@@ -15,7 +15,6 @@ import sass from './sass.svg';
 import tailwindcss from './tailwindcss.svg';
 import typescript from './typescript.svg';
 import linkedin from './linkedin.svg';
-import twitter from './twitter.svg';
 import car from './car.svg';
 import estate from './estate.svg';
 import pricewise from './pricewise.svg';
@@ -45,7 +44,6 @@ export {
     tailwindcss,
     typescript,
     linkedin,
-    twitter,
     car,
     estate,
     pricewise,

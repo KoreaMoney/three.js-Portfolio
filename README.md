@@ -10,5 +10,6 @@
 - tailwindcss
 - @emailjs/browser
 - @react-spring/three
+- react-vertical-timeline-component
 ## Description
 - The structure using three.js in react rather than vanillajs was developed through vite, and it was developed for portfolio purposes.
