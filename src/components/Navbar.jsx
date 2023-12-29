@@ -12,7 +12,7 @@ const Navbar = () => {
             >
                 <p className="blue-gradient_text">DOWON</p>
             </NavLink>
-            <nav className="flex text-lg gap-7 font-medium items-center">
+            <nav className="flex text-lg gap-5 font-medium items-center ml-2">
                 <NavLink to="/about" className={({ isActive }) => (isActive ? 'text-blue-500' : 'text-black')}>
                     About
                 </NavLink>
@@ -20,13 +20,17 @@ const Navbar = () => {
                     Projects
                 </NavLink>
                 <Link to={'https://github.com/KoreaMoney'} target="_blank" rel="noopener noreferrer">
-                    <img src={github} alt="깃헙" className="w-6 h-6 object-contain cursor-pointer shadow-md" />
+                    <img
+                        src={github}
+                        alt="깃헙"
+                        className="w-[25px] h-[25px] object-contain cursor-pointer shadow-md"
+                    />
                 </Link>
                 <Link to={'https://www.linkedin.com/in/dowon-kim-415646237/'} target="_blank" rel="noopener noreferrer">
                     <img
                         src={linkedin}
                         alt="링크드인"
-                        className="w-6 h-6 object-contain cursor-pointer rounded-sm shadow-md bg-slate-100"
+                        className="w-[25px] h-[25px] object-contain cursor-pointer rounded-sm shadow-md bg-slate-100"
                     />
                 </Link>
             </nav>

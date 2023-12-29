@@ -91,7 +91,7 @@ const Home = () => {
                     <Plane isRotating={isRotating} rotation={[0, 20, 0]} scale={planeScale} position={planePosition} />
                 </Suspense>
             </Canvas>
-            <div className="absolute bottom-2 right-2 top-5">
+            <div className="absolute bottom-2 right-2">
                 <img
                     src={!isPlaying ? soundOff : soundOn}
                     alt="sound"
