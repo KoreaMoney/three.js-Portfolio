@@ -13,12 +13,12 @@ import {
     linkedin,
     reactrouter,
     nextjs,
-    pricewise,
     react,
     recoil,
     sass,
     tailwindcss,
     typescript,
+    summiz,
 } from '../assets/icon';
 
 export const skills = [
@@ -155,11 +155,11 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: pricewise,
+        iconUrl: summiz,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
+        name: 'INFOIN BeyonD Platform',
         description:
-            'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+            "In a company that makes digital twins, I'm applying 3D to the web using three.js together while acting as a front end and developing it from a user perspective And we are learning JavaScript and react together, and we are learning other publishers and new developers.",
+        link: 'http://www.in4in.com/#digitaltwin',
     },
 ];
